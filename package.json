@@ -1,0 +1,26 @@
+{
+  "name": "basket-storage",
+  "version": "3.0.2",
+  "description": "React js Hook",
+  "main": "useBasketStorage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "davitmamasakhlisi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mamasakhlisi/basket-storage"
+  },
+  "keywords": [
+    "react",
+    "react hook"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "basket-storage": "^3.0.0"
+  }
+}
