@@ -6,12 +6,13 @@ function getSavedBasket() {
 }
 
 const useBasketStorage = () => {
-  const [basket, setBasket] = useState(() => {return getSavedBasket()})
+  const [basket, setBasket] = useState(() => {
+    return getSavedBasket();
+  });
 
-  function setBasketItem (item) {
-    console.log(!basket.length)
-    console.log(    basket?.map(x => x.id !== item.id && x.id))
-    }
+  function setBasketItem(item) {
+    basket?.map((x) => x.id !== item.id && x.id);
+  }
 
   function findBasketItem(id) {
     basket.find((item) => item.id === id);
@@ -29,7 +30,7 @@ const useBasketStorage = () => {
     localStorage.setItem("basket", JSON.stringify(basket));
   }, [basket]);
 
-  return [basket,setBasketItem, removeBasketItem, findBasketItem, clearBasket];
+  return [basket, setBasketItem, removeBasketItem, findBasketItem, clearBasket];
 };
 
 export default useBasketStorage;
